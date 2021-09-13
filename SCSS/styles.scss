@@ -1,0 +1,29 @@
+@import "service.scss";
+@import "header.scss";
+@import "somos.scss";
+@import "blog.scss";
+@import "404.scss";
+h1 {
+  color: rgb(4, 122, 93);
+  text-align: center;
+  font-family: "MonteCarlo", cursive;
+  font-size: 8rem;
+}
+.footer {
+  height: 6vh;
+  background: $backGradient;
+  background-repeat: no-repeat;
+}
+
+.footer__contact {
+  display: flex;
+  justify-content: center;
+}
+section {
+  margin: 15vh 0 10vh 0;
+}
+.post {
+  h3 {
+    font-size: 3rem;
+  }
+}

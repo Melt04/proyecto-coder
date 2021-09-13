@@ -1,0 +1,28 @@
+h1 {
+  color: rgb(4, 122, 93);
+  text-align: center;
+  font-family: "MonteCarlo", cursive;
+  font-size: 8rem;
+}
+footer {
+  height: 6vh;
+  background-color: rgb(183, 250, 235);
+}
+.section-image_main div {
+  text-align: center;
+}
+.section-image_main div img {
+  padding: 0 6vw 0 6vw;
+}
+.section-image_text {
+  margin: 4% 0 0 0;
+  padding: 0 30% 0 30%;
+}
+
+.mainImage {
+  border-radius: 20px;
+}
+body {
+  background: linear-gradient(180deg, rgb(235, 248, 245) 0%, rgb(220, 253, 246) 40%, rgb(154, 243, 222) 100%);
+  background-repeat: no-repeat;
+}

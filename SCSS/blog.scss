@@ -1,0 +1,42 @@
+.main__mainPost {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 10rem;
+}
+.main__moreArt {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 1% 0 1% 0;
+}
+.main__listArt {
+  padding: 1% 0 1% 0;
+}
+.card {
+  width: 60%;
+  background-color: rgb(218, 235, 238);
+  border-radius: 4rem;
+  padding: 1% 0 1% 0;
+  margin: 1% 0 1% 0;
+  &:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+  }
+}
+.card-link {
+  font-size: 2rem;
+}
+
+$link: (
+  visited: rgb(245, 106, 42),
+  disabled: gray,
+);
+
+@each $state, $color in $link {
+  .card-link--#{$state} {
+    color: $color;
+  }
+}

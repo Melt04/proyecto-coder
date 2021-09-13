@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- OpenGraph -->
+    <meta property="og:url" content="https://bodysoft.com.ar " />
+    <meta property="og:title" content="BodySoft Estetica" />
+    <meta
+      property="og:description"
+      content="Bodysoft provee una serie de tratamientos para el cuidado corporal y la estetica ,basado en tratamientos modernos.Tambien ofrecemos otros tipos de servicios como masajes"
+    />
+    <meta property="og:type" content="website" />
+    <meta name="keywords" content="contacto,bodysoft,formulario,email,horarios" />
+    <meta
+      name="description"
+      content="Formulario donde puedes contactarnos y despejar dudas, averiguar sobre tratamietnos, horarios, y cualquier tipo de solicitud"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bodysoft Contactanos</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="listMenu">
+        <li><a href="../index.html"> Inicio</a></li>
+        <li><a href="./servicios.html">Servicios</a></li>
+        <li><a href="./somos.html"> Quienes Somos</a></li>
+        <li><a href="./blog.html"> Blog</a></li>
+        <li class="subLinkMenu">
+          <a href=""> Tratamientos </a>
+          <ul class="subListMenu">
+            <li><a href="">Faciales</a></li>
+            <li><a href="">Corporales</a></li>
+            <li><a href="">Otros</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <h1>Contactanos</h1>
+    <form action="">
+      <div>
+        <label for="name">Nombre</label>
+        <input type="text" id="name" required />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="lastName" required />
+      </div>
+      <label for="treatment">Tratamiento</label>
+      <div>
+        <select name="treatment" id="treatment">
+          <option value="f">Tratamiento Facial</option>
+          <option value="b">Tratamiento corporal</option>
+        </select>
+      </div>
+      <textarea name="contentMessage" id="contentMessage" cols="30" rows="10"></textarea>
+      <div>
+        <button type="reset">Reset</button>
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
+    <footer>
+      <p><a href="./contacto.html">Consulta | Contactanos</a></p>
+    </footer>
+  </body>
+</html>

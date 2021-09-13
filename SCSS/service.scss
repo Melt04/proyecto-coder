@@ -1,0 +1,130 @@
+@import "vars.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+table {
+  font-family: arial, sans-serif;
+  width: 100%;
+  border: wheat 3px solid;
+  letter-spacing: 0.1rem;
+  font-size: 2rem;
+}
+.mainContent__tableHead {
+  text-decoration: underline;
+  color: rgb(4, 122, 93);
+}
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px 30px 8px 30px;
+}
+.mainContent__boldTable {
+  li {
+    font-weight: 400;
+  }
+}
+ul {
+  padding: 20px;
+  font-size: 1.7rem;
+}
+html {
+  font-size: 62.5%;
+}
+a {
+  text-decoration: none;
+}
+
+.mainContent__promo {
+  text-align: left;
+  list-style-type: none;
+  font-size: 2rem;
+}
+.mainSection__promo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainContent__promo {
+  li {
+    padding: 1% 0 1% 0;
+  }
+}
+
+p {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 2rem;
+}
+$promos: (
+  high: red,
+  med: blue,
+  low: rgb(0, 140, 255),
+);
+
+.main__promoDesc {
+  padding: 1% 0 1% 0;
+}
+
+@each $level, $color in $promos {
+  .main__promoDesc--#{$level} {
+    color: $color;
+  }
+}
+
+@media only screen and (max-width: 1000px), (min-device-width: 768px) and (max-device-width: 1024px) {
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    border: 1px solid #dddddd;
+  }
+  td {
+    border: 1px solid #dddddd;
+    padding: 8px 30px 8px 30px;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  td:nth-of-type(1):before {
+    content: "Nombre del Tratamiento";
+  }
+  td:nth-of-type(2):before {
+    content: "Dias Disponibles";
+  }
+  td:nth-of-type(3):before {
+    content: "Precio";
+  }
+  td:nth-of-type(4):before {
+    content: "Tipos de tratamiento";
+  }
+  td:nth-of-type(5):before {
+    content: "Beneficios";
+  }
+}
