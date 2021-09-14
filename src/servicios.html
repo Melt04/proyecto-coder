@@ -2,7 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!--  <link rel="stylesheet" href="../styles/styles.css" /> -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="../css/main.css" />
     <!-- OpenGraph -->
     <meta property="og:url" content="https://bodysoft.com.ar " />
@@ -22,24 +28,44 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap" rel="stylesheet" />
+
     <title>Bodyosft Tabla de precios</title>
   </head>
   <body>
-    <nav>
-      <ul class="header__navMenu">
-        <li><a href="../index.html"> Inicio</a></li>
-        <li><a href="./servicios.html">Servicios</a></li>
-        <li><a href="./somos.html"> Quienes Somos</a></li>
-        <li><a href="./blog.html"> Blog</a></li>
-        <li class="header__navSubLink">
-          <a href=""> Tratamientos </a>
-          <ul class="header__navsubMenu">
-            <li><a href="">Faciales</a></li>
-            <li><a href="">Corporales</a></li>
-            <li><a href="">Otros</a></li>
+    <nav class="navbar navbar-expand-xl navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="../images/logo/logo2.PNG" alt="" /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarWithDropdown"
+          aria-controls="navbarWithDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse show" id="navbarWithDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./somos.html">Quienes Somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./blog.html">Tratamientos</a>
+            </li>
           </ul>
-        </li>
-      </ul>
+        </div>
+      </div>
     </nav>
     <h1>Servicios</h1>
     <table>

@@ -106,11 +106,18 @@ p {
   transform: scale(1.2);
   transition: all 1s; }
 
+.navbar-brand img {
+  border-radius: 35px; }
+
+.navbar-collapse {
+  justify-content: flex-end; }
+
 .header__navMenu a:hover {
   color: #047a5d; }
 
 .header__navMenu {
-  display: flex; }
+  display: flex;
+  justify-content: end; }
 
 .header__navMenu li {
   position: relative; }

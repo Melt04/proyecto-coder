@@ -7,6 +7,14 @@
     }
   }
 }
+.navbar-brand {
+  img {
+    border-radius: 35px;
+  }
+}
+.navbar-collapse {
+  justify-content: flex-end;
+}
 .header__navMenu {
   a {
     &:hover {
@@ -16,6 +24,7 @@
 }
 .header__navMenu {
   display: flex;
+  justify-content: end;
 }
 .header__navMenu {
   li {
