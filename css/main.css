@@ -302,7 +302,65 @@ a.more-link {
   margin-top: 50px;
   letter-spacing: 1px; }
 
+.main__form {
+  width: 45%;
+  margin: auto;
+  border: 1px solid #ffffff;
+  background-color: #d3f3f8;
+  font-size: 1.8rem;
+  border-radius: 40px;
+  padding: 30px;
+  text-align: center;
+  font-family: "Chakra Petch", sans-serif;
+  height: 60vh; }
+  .main__form input {
+    color: black; }
+  .main__form p {
+    text-align: left; }
+
+.main__formArea {
+  display: flex;
+  width: 40%;
+  margin: auto;
+  justify-content: center;
+  border: 1px solid #ffffff;
+  border-radius: 40px; }
+  .main__formArea p {
+    font-size: 1.6rem;
+    text-align: left; }
+
+.main__formSelector,
+.main_formPreguntas {
+  margin: 6% 0 6% 0; }
+
+.main__formSelector {
+  display: flex;
+  width: 100%;
+  justify-content: space-around; }
+
+.main__contentn_contacto {
+  background-color: white; }
+
+.main_formData {
+  display: flex;
+  justify-content: space-around; }
+
+.main_formPreguntas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.main__formButton {
+  margin: 10% 0 0 0;
+  display: flex;
+  justify-content: space-around; }
+  .main__formButton button {
+    font-size: 2.4rem; }
+
 h1 {
+  margin: 0;
+  padding-top: 2%;
   color: #047a5d;
   text-align: center;
   font-family: "MonteCarlo", cursive;
@@ -321,7 +379,8 @@ body {
   height: 50px;
   display: flex;
   justify-content: space-between;
-  flex-wrap: nowrap; }
+  flex-wrap: nowrap;
+  align-items: center; }
 
 section {
   margin: 15vh 0 10vh 0; }

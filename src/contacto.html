@@ -8,7 +8,11 @@
       integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../css/main.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <!-- OpenGraph -->
@@ -29,7 +33,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bodysoft Contactanos</title>
   </head>
-  <body>
+  <body class="fullBody">
     <nav class="navbar navbar-expand-xl navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"><img src="../images/logo/logo2.PNG" alt="" /></a>
@@ -65,31 +69,72 @@
         </div>
       </div>
     </nav>
+
     <h1>Contactanos</h1>
-    <form action="">
-      <div>
-        <label for="name">Nombre</label>
-        <input type="text" id="name" required />
+    <!-- <div class="main__formArea"> -->
+
+    <form action="" class="main__form">
+      <p>Formulario de contacto</p>
+      <div class="main_formData">
+        <div>
+          <div><label for="name">Nombre</label></div>
+          <input type="text" id="name" required size="20" />
+        </div>
+        <div>
+          <div><label for="email">Email</label></div>
+
+          <input type="email" id="lastName" size="20" required />
+        </div>
       </div>
-      <div>
-        <label for="email">Email</label>
-        <input type="email" id="lastName" required />
+      <div class="main_formPreguntas">
+        <p>Sobre que tema queres saber?</p>
+        <div class="main__formSelector">
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="formSwitchCheckDefault" />
+            <label class="form-check-label" for="formSwitchCheckDefault">Precios</label>
+          </div>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="formSwitchCheckChecked" />
+            <label class="form-check-label" for="formSwitchCheckChecked">Promociones</label>
+          </div>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="formSwitchCheckChecked" />
+            <label class="form-check-label" for="formSwitchCheckChecked">Recomendaciones</label>
+          </div>
+        </div>
       </div>
-      <label for="treatment">Tratamiento</label>
-      <div>
-        <select name="treatment" id="treatment">
-          <option value="f">Tratamiento Facial</option>
-          <option value="b">Tratamiento corporal</option>
-        </select>
-      </div>
-      <textarea name="contentMessage" id="contentMessage" cols="30" rows="10"></textarea>
-      <div>
-        <button type="reset">Reset</button>
-        <button type="submit">Enviar</button>
+
+      <div class="main__formButton">
+        <button type="button" class="btn btn-outline-warning btn-lg">Reset</button>
+        <button type="submit" class="btn btn-outline-success btn-lg">Enviar</button>
       </div>
     </form>
-    <footer>
-      <p><a href="./contacto.html">Consulta | Contactanos</a></p>
+    <!-- </div> -->
+
+    <footer class="footer">
+      <p class="footer__contact"><a href="./contacto.html">Consulta | Contactanos</a></p>
+      <div class="footer__network">
+        <a href=""
+          ><svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
+            <path
+              d="M12,2C6.477,2,2,6.477,2,12c0,5.013,3.693,9.153,8.505,9.876V14.65H8.031v-2.629h2.474v-1.749 c0-2.896,1.411-4.167,3.818-4.167c1.153,0,1.762,0.085,2.051,0.124v2.294h-1.642c-1.022,0-1.379,0.969-1.379,2.061v1.437h2.995 l-0.406,2.629h-2.588v7.247C18.235,21.236,22,17.062,22,12C22,6.477,17.523,2,12,2z"
+            /></svg
+        ></a>
+        <a href=""
+          ><svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
+            <path
+              d="M19.077,4.928C17.191,3.041,14.683,2.001,12.011,2c-5.506,0-9.987,4.479-9.989,9.985 c-0.001,1.76,0.459,3.478,1.333,4.992L2,22l5.233-1.237c1.459,0.796,3.101,1.215,4.773,1.216h0.004 c5.505,0,9.986-4.48,9.989-9.985C22.001,9.325,20.963,6.816,19.077,4.928z M16.898,15.554c-0.208,0.583-1.227,1.145-1.685,1.186 c-0.458,0.042-0.887,0.207-2.995-0.624c-2.537-1-4.139-3.601-4.263-3.767c-0.125-0.167-1.019-1.353-1.019-2.581 S7.581,7.936,7.81,7.687c0.229-0.25,0.499-0.312,0.666-0.312c0.166,0,0.333,0,0.478,0.006c0.178,0.007,0.375,0.016,0.562,0.431 c0.222,0.494,0.707,1.728,0.769,1.853s0.104,0.271,0.021,0.437s-0.125,0.27-0.249,0.416c-0.125,0.146-0.262,0.325-0.374,0.437 c-0.125,0.124-0.255,0.26-0.11,0.509c0.146,0.25,0.646,1.067,1.388,1.728c0.954,0.85,1.757,1.113,2.007,1.239 c0.25,0.125,0.395,0.104,0.541-0.063c0.146-0.166,0.624-0.728,0.79-0.978s0.333-0.208,0.562-0.125s1.456,0.687,1.705,0.812 c0.25,0.125,0.416,0.187,0.478,0.291C17.106,14.471,17.106,14.971,16.898,15.554z"
+            />
+          </svg>
+        </a>
+        <a href="">
+          <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
+            <path
+              d="M 8 3 C 5.239 3 3 5.239 3 8 L 3 16 C 3 18.761 5.239 21 8 21 L 16 21 C 18.761 21 21 18.761 21 16 L 21 8 C 21 5.239 18.761 3 16 3 L 8 3 z M 18 5 C 18.552 5 19 5.448 19 6 C 19 6.552 18.552 7 18 7 C 17.448 7 17 6.552 17 6 C 17 5.448 17.448 5 18 5 z M 12 7 C 14.761 7 17 9.239 17 12 C 17 14.761 14.761 17 12 17 C 9.239 17 7 14.761 7 12 C 7 9.239 9.239 7 12 7 z M 12 9 A 3 3 0 0 0 9 12 A 3 3 0 0 0 12 15 A 3 3 0 0 0 15 12 A 3 3 0 0 0 12 9 z"
+            />
+          </svg>
+        </a>
+      </div>
     </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"

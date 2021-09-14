@@ -19,20 +19,7 @@ h1 {
   font-family: "MonteCarlo", cursive;
   font-size: 8rem;
 }
-form {
-  border: 1px solid #ffffff;
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  border-radius: 20px;
-  padding: 30px;
-  font-size: 2.5rem;
-  margin: 0 0 45vh 75vh;
-  text-align: center;
-  width: 50vh;
-  background-color: wheat;
-  height: 40vh;
-}
+
 section {
   margin: 15vh 0 10vh 0;
 }
