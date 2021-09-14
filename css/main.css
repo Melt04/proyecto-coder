@@ -102,43 +102,19 @@ p {
   td:nth-of-type(5):before {
     content: "Beneficios"; } }
 
-.header__navMenu > li:hover {
-  transform: scale(1.2);
-  transition: all 1s; }
-
 .navbar-brand img {
   border-radius: 35px; }
 
 .navbar-collapse {
   justify-content: flex-end; }
+  .navbar-collapse li:hover {
+    transform: scale(1.2);
+    transition: all 1s; }
+  .navbar-collapse li a:hover {
+    color: #047a5d; }
 
 .header__navMenu a:hover {
   color: #047a5d; }
-
-.header__navMenu {
-  display: flex;
-  justify-content: end; }
-
-.header__navMenu li {
-  position: relative; }
-
-.header__navMenu li:hover ul {
-  display: block; }
-
-.header__navsubMenu {
-  display: none;
-  position: absolute;
-  padding: 0;
-  margin: 0px;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  background-color: #d3f3f8;
-  z-index: 1; }
-
-.header__navsubMenu li {
-  display: block;
-  margin: 0;
-  padding: 20px; }
 
 nav {
   display: flex;
@@ -332,14 +308,20 @@ h1 {
   font-family: "MonteCarlo", cursive;
   font-size: 8rem; }
 
-.footer {
-  height: 6vh;
-  background: linear-gradient(90deg, #b6fbeb 0%, #dcfdf6 40%, #9af3de 100%);
-  background-repeat: no-repeat; }
+body {
+  margin-bottom: 0px; }
 
-.footer__contact {
+.footer {
+  height: 100%;
+  background: linear-gradient(90deg, #b6fbeb 0%, #dcfdf6 40%, #9af3de 100%);
+  background-repeat: no-repeat;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
   display: flex;
-  justify-content: center; }
+  justify-content: space-between;
+  flex-wrap: nowrap; }
 
 section {
   margin: 15vh 0 10vh 0; }

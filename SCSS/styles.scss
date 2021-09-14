@@ -9,15 +9,23 @@ h1 {
   font-family: "MonteCarlo", cursive;
   font-size: 8rem;
 }
+body {
+  margin-bottom: 0px;
+}
 .footer {
-  height: 6vh;
+  height: 100%;
   background: $backGradient;
   background-repeat: no-repeat;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
 }
 
 .footer__contact {
-  display: flex;
-  justify-content: center;
 }
 section {
   margin: 15vh 0 10vh 0;
