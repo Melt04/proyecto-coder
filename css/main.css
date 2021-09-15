@@ -102,6 +102,81 @@ p {
   td:nth-of-type(5):before {
     content: "Beneficios"; } }
 
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background: #1abc9c;
+  text-align: center; }
+  .month ul {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px; }
+  .month li,
+  .month p {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px; }
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd; }
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center; }
+
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0; }
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #777; }
+
+.days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important; }
+
+.days li .inactive {
+  padding: 5px;
+  background: red;
+  color: white !important; }
+
+.main__titleCalendar {
+  text-align: center; }
+
+/* Add media queries for smaller screens */
+@media screen and (max-width: 720px) {
+  .weekdays li,
+  .days li {
+    width: 13.1%; } }
+
+@media screen and (max-width: 420px) {
+  .weekdays li,
+  .days li {
+    width: 12.5%; }
+  .days li .active {
+    padding: 2px; } }
+
+@media screen and (max-width: 290px) {
+  .weekdays li,
+  .days li {
+    width: 12.2%; } }
+
 .navbar-brand img {
   border-radius: 35px; }
 
@@ -303,31 +378,29 @@ a.more-link {
   letter-spacing: 1px; }
 
 .main__form {
-  width: 45%;
+  width: 40%;
   margin: auto;
   border: 1px solid #ffffff;
-  background-color: #d3f3f8;
+  /* background-color: $mainBackColor; */
+  background-color: rgba(4, 124, 124, 0.883);
   font-size: 1.8rem;
   border-radius: 40px;
   padding: 30px;
   text-align: center;
   font-family: "Chakra Petch", sans-serif;
-  height: 60vh; }
+  height: 70vh;
+  margin-bottom: 1%; }
+  .main__form label {
+    color: white; }
   .main__form input {
     color: black; }
   .main__form p {
+    color: white;
     text-align: left; }
 
-.main__formArea {
-  display: flex;
-  width: 40%;
-  margin: auto;
-  justify-content: center;
-  border: 1px solid #ffffff;
-  border-radius: 40px; }
-  .main__formArea p {
-    font-size: 1.6rem;
-    text-align: left; }
+textarea {
+  resize: none;
+  font-size: 1.8rem !important; }
 
 .main__formSelector,
 .main_formPreguntas {
@@ -352,11 +425,21 @@ a.more-link {
   flex-direction: column; }
 
 .main__formButton {
-  margin: 10% 0 0 0;
+  margin: 5% 0 0 0;
   display: flex;
   justify-content: space-around; }
   .main__formButton button {
     font-size: 2.4rem; }
+
+@media only screen and (max-width: 1000px), (min-device-width: 768px) and (max-device-width: 1024px) {
+  .main__form {
+    width: 100%; }
+    .main__form p {
+      text-align: center; }
+  .main_formData {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; } }
 
 h1 {
   margin: 0;

@@ -1,33 +1,31 @@
 @import "vars.scss";
 .main__form {
-  width: 45%;
+  width: 40%;
   margin: auto;
   border: 1px solid #ffffff;
-  background-color: $mainBackColor;
+  /* background-color: $mainBackColor; */
+  background-color: rgba(4, 124, 124, 0.883);
   font-size: 1.8rem;
   border-radius: 40px;
+  label {
+    color: white;
+  }
   input {
     color: black;
   }
   p {
+    color: white;
     text-align: left;
   }
   padding: 30px;
   text-align: center;
   font-family: "Chakra Petch", sans-serif;
-  height: 60vh;
+  height: 70vh;
+  margin-bottom: 1%;
 }
-.main__formArea {
-  display: flex;
-  width: 40%;
-  margin: auto;
-  justify-content: center;
-  border: 1px solid #ffffff;
-  border-radius: 40px;
-  p {
-    font-size: 1.6rem;
-    text-align: left;
-  }
+textarea {
+  resize: none;
+  font-size: 1.8rem !important;
 }
 .main__formSelector,
 .main_formPreguntas {
@@ -55,10 +53,23 @@
   flex-direction: column;
 }
 .main__formButton {
-  margin: 10% 0 0 0;
+  margin: 5% 0 0 0;
   display: flex;
   justify-content: space-around;
   button {
     font-size: 2.4rem;
+  }
+}
+@media only screen and (max-width: 1000px), (min-device-width: 768px) and (max-device-width: 1024px) {
+  .main__form {
+    width: 100%;
+    p {
+      text-align: center;
+    }
+  }
+  .main_formData {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
 }

@@ -71,19 +71,18 @@
     </nav>
 
     <h1>Contactanos</h1>
-    <!-- <div class="main__formArea"> -->
 
     <form action="" class="main__form">
       <p>Formulario de contacto</p>
       <div class="main_formData">
         <div>
           <div><label for="name">Nombre</label></div>
-          <input type="text" id="name" required size="20" />
+          <input type="text" id="name" required size="15" />
         </div>
         <div>
           <div><label for="email">Email</label></div>
 
-          <input type="email" id="lastName" size="20" required />
+          <input type="email" id="lastName" size="15" required />
         </div>
       </div>
       <div class="main_formPreguntas">
@@ -103,13 +102,22 @@
           </div>
         </div>
       </div>
-
+      <div>
+        <div class="form-floating">
+          <textarea
+            class="form-control"
+            placeholder="Leave a comment here"
+            id="floatingTextarea2"
+            style="height: 140px"
+          ></textarea>
+          <label for="floatingTextarea2">Dejanos un comentario...</label>
+        </div>
+      </div>
       <div class="main__formButton">
-        <button type="button" class="btn btn-outline-warning btn-lg">Reset</button>
-        <button type="submit" class="btn btn-outline-success btn-lg">Enviar</button>
+        <button type="reset" class="btn btn-danger btn-lg">Reset</button>
+        <button type="submit" class="btn btn-success btn-lg">Enviar</button>
       </div>
     </form>
-    <!-- </div> -->
 
     <footer class="footer">
       <p class="footer__contact"><a href="./contacto.html">Consulta | Contactanos</a></p>
