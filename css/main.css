@@ -224,22 +224,20 @@ nav ul li {
   flex-direction: column;
   align-items: center;
   padding: 1% 0 1% 0; }
+  .main__moreArt .card {
+    width: 60%;
+    background-color: #daebee;
+    border-radius: 4rem;
+    padding: 1% 0 1% 0;
+    margin: 1% 0 1% 0; }
+    .main__moreArt .card:hover {
+      transform: scale(1.1);
+      transition: all 0.5s; }
+  .main__moreArt .card-link {
+    font-size: 2rem; }
 
 .main__listArt {
   padding: 1% 0 1% 0; }
-
-.card {
-  width: 60%;
-  background-color: #daebee;
-  border-radius: 4rem;
-  padding: 1% 0 1% 0;
-  margin: 1% 0 1% 0; }
-  .card:hover {
-    transform: scale(1.1);
-    transition: all 0.5s; }
-
-.card-link {
-  font-size: 2rem; }
 
 .card-link--visited {
   color: #f56a2a; }
@@ -463,6 +461,20 @@ textarea {
     display: flex;
     flex-direction: column;
     justify-content: space-around; } }
+
+.main__tratamientos .card-body {
+  height: 130px; }
+
+.main__tratamientos .card-group {
+  justify-content: center;
+  align-items: center; }
+
+.main__tratamientos .card {
+  margin: 3%; }
+  .main__tratamientos .card img {
+    max-height: 250px; }
+  .main__tratamientos .card:hover {
+    transform: scale(1.1); }
 
 h1,
 h2 {
