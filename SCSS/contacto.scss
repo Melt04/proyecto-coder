@@ -5,11 +5,14 @@
   border: 1px solid #ffffff;
   /* background-color: $mainBackColor; */
   background-color: rgba(4, 124, 124, 0.883);
+  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 10px 9px 8px 9px rgba(12, 6, 6, 0);
+  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 10px 9px 8px 9px rgba(12, 6, 6, 0);
   font-size: 1.8rem;
   border-radius: 40px;
   label {
     color: white;
   }
+
   input {
     color: black;
   }
@@ -23,9 +26,19 @@
   height: 70vh;
   margin-bottom: 1%;
 }
+.form-floating {
+  label {
+    color: black;
+  }
+}
 textarea {
   resize: none;
   font-size: 1.8rem !important;
+  height: 100px !important;
+
+  label {
+    color: black;
+  }
 }
 .main__formSelector,
 .main_formPreguntas {
@@ -55,14 +68,25 @@ textarea {
 .main__formButton {
   margin: 5% 0 0 0;
   display: flex;
+
   justify-content: space-around;
   button {
     font-size: 2.4rem;
+    border-radius: 2rem;
+    width: 40%;
+    padding: 2%;
   }
 }
 @media only screen and (max-width: 1000px), (min-device-width: 768px) and (max-device-width: 1024px) {
   .main__form {
     width: 100%;
+    height: 80vh;
+    textarea {
+      height: 60px !important;
+    }
+    button {
+      width: 20%;
+    }
     p {
       text-align: center;
     }

@@ -1,11 +1,5 @@
 @import "vars.scss";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 table {
   font-family: arial, sans-serif;
   width: 100%;
@@ -85,6 +79,7 @@ $promos: (
   td,
   tr {
     display: block;
+    font-size: 12px;
   }
 
   thead tr {
@@ -149,7 +144,9 @@ $promos: (
     letter-spacing: 3px;
   }
 }
-
+.main__calendar {
+  margin: auto 1%;
+}
 .weekdays {
   margin: 0;
   padding: 10px 0;
@@ -173,6 +170,7 @@ $promos: (
   list-style-type: none;
   display: inline-block;
   width: 13.6%;
+  cursor: no-drop;
   text-align: center;
   margin-bottom: 5px;
   font-size: 12px;
@@ -183,18 +181,24 @@ $promos: (
   padding: 5px;
   background: #1abc9c;
   color: white !important;
+  &:hover {
+    cursor: pointer;
+  }
 }
 .days li .inactive {
   padding: 5px;
   background: red;
   color: white !important;
+  &:hover {
+    cursor: not-allowed;
+  }
 }
 
 .main__titleCalendar {
   text-align: center;
 }
 
-/* Add media queries for smaller screens */
+// Add media queries for smaller screens //
 @media screen and (max-width: 720px) {
   .weekdays li,
   .days li {
