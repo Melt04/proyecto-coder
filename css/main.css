@@ -35,14 +35,35 @@ a {
   list-style-type: none;
   font-size: 2rem; }
 
+.card-body {
+  background: linear-gradient(90deg, #b6fbeb 0%, #dcfdf6 40%, #9af3de 100%); }
+
+.main__cardPromo {
+  display: flex;
+  width: 100%;
+  justify-content: space-around; }
+  .main__cardPromo .card {
+    margin: 1%;
+    border-radius: 5%;
+    height: 25vh; }
+
+.main__cardLink {
+  text-align: center; }
+  .main__cardLink a {
+    font-size: 2rem;
+    background-color: #1abc9c; }
+    .main__cardLink a:hover {
+      background-color: #1abc9c;
+      transform: scale(1.2); }
+
 .mainSection__promo {
+  /* background: $backGradient; */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
-
-.mainContent__promo li {
-  padding: 1% 0 1% 0; }
+  align-items: center;
+  height: 60%;
+  margin-bottom: 0; }
 
 p {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
@@ -52,13 +73,19 @@ p {
   padding: 1% 0 1% 0; }
 
 .main__promoDesc--high {
-  color: red; }
+  color: red;
+  font-size: 2rem;
+  text-align: center; }
 
 .main__promoDesc--med {
-  color: blue; }
+  color: blue;
+  font-size: 2rem;
+  text-align: center; }
 
 .main__promoDesc--low {
-  color: #008cff; }
+  color: #008cff;
+  font-size: 2rem;
+  text-align: center; }
 
 @media only screen and (max-width: 1000px), (min-device-width: 768px) and (max-device-width: 1024px) {
   table,
@@ -73,6 +100,10 @@ p {
     position: absolute;
     top: -9999px;
     left: -9999px; }
+  .main__cardPromo {
+    flex-direction: column; }
+    .main__cardPromo .card {
+      height: 40vh; }
   tr {
     border: 1px solid #dddddd; }
   td {
@@ -118,7 +149,7 @@ p {
     letter-spacing: 3px; }
 
 .main__calendar {
-  margin: auto 1%; }
+  margin: auto 4%; }
 
 .weekdays {
   margin: 0;

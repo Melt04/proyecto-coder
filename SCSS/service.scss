@@ -38,17 +38,39 @@ a {
   list-style-type: none;
   font-size: 2rem;
 }
+.card-body {
+  background: $backGradient;
+}
+.main__cardPromo {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+
+  .card {
+    margin: 1%;
+    border-radius: 5%;
+    height: 25vh;
+  }
+}
+.main__cardLink {
+  text-align: center;
+  a {
+    font-size: 2rem;
+    background-color: #1abc9c;
+    &:hover {
+      background-color: #1abc9c;
+      transform: scale(1.2);
+    }
+  }
+}
 .mainSection__promo {
+  /* background: $backGradient; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.mainContent__promo {
-  li {
-    padding: 1% 0 1% 0;
-  }
+  height: 60%;
+  margin-bottom: 0;
 }
 
 p {
@@ -68,6 +90,8 @@ $promos: (
 @each $level, $color in $promos {
   .main__promoDesc--#{$level} {
     color: $color;
+    font-size: 2rem;
+    text-align: center;
   }
 }
 
@@ -88,6 +112,13 @@ $promos: (
     left: -9999px;
   }
 
+  .main__cardPromo {
+    flex-direction: column;
+
+    .card {
+      height: 40vh;
+    }
+  }
   tr {
     border: 1px solid #dddddd;
   }
@@ -145,7 +176,7 @@ $promos: (
   }
 }
 .main__calendar {
-  margin: auto 1%;
+  margin: auto 4%;
 }
 .weekdays {
   margin: 0;
