@@ -38,13 +38,14 @@ a {
   list-style-type: none;
   font-size: 2rem;
 }
-.card-body {
-  background: $backGradient;
-}
+
 .main__cardPromo {
   display: flex;
   width: 100%;
   justify-content: space-around;
+  .card-body {
+    background: $backGradient;
+  }
 
   .card {
     margin: 1%;

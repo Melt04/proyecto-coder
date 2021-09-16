@@ -35,13 +35,12 @@ a {
   list-style-type: none;
   font-size: 2rem; }
 
-.card-body {
-  background: linear-gradient(90deg, #b6fbeb 0%, #dcfdf6 40%, #9af3de 100%); }
-
 .main__cardPromo {
   display: flex;
   width: 100%;
   justify-content: space-around; }
+  .main__cardPromo .card-body {
+    background: linear-gradient(90deg, #b6fbeb 0%, #dcfdf6 40%, #9af3de 100%); }
   .main__cardPromo .card {
     margin: 1%;
     border-radius: 5%;
@@ -242,12 +241,23 @@ nav ul li {
   .somosText p {
     font-family: "WindSong", cursive; }
 
+h3 {
+  text-align: center; }
+
 .main__mainPost {
   display: grid;
   justify-items: center;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-row-gap: 10rem; }
+  .main__mainPost p {
+    font-weight: 100px; }
+  .main__mainPost div {
+    margin: 4%;
+    padding: 6%;
+    box-shadow: 5px 4px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 5px 4px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 4px 5px 0px rgba(0, 0, 0, 0.75); }
 
 .main__moreArt {
   display: flex;
@@ -277,8 +287,16 @@ nav ul li {
   color: gray; }
 
 @media only screen and (max-width: 1000px), (min-device-width: 768px) and (max-device-width: 1024px) {
-  .main__mainPost p {
-    font-size: 1.5rem; } }
+  .main__mainPost {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin: 4%; }
+    .main__mainPost div {
+      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
+    .main__mainPost s p {
+      font-size: 1.5rem; } }
 
 .error-container {
   text-align: center;
@@ -481,7 +499,12 @@ textarea {
 @media only screen and (max-width: 1000px), (min-device-width: 768px) and (max-device-width: 1024px) {
   .main__form {
     width: 100%;
-    height: 80vh; }
+    height: 85vh; }
+    .main__form .main__formSelector {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      font-size: 1.4rem; }
     .main__form textarea {
       height: 60px !important; }
     .main__form button {
@@ -491,7 +514,12 @@ textarea {
   .main_formData {
     display: flex;
     flex-direction: column;
-    justify-content: space-around; } }
+    justify-content: space-around; }
+  .main__formButton button {
+    font-size: 1.4rem;
+    border-radius: 1rem;
+    width: 40%;
+    padding: 2%; } }
 
 .main__tratamientos .card-body {
   height: 130px; }
@@ -500,12 +528,17 @@ textarea {
   justify-content: center;
   align-items: center; }
 
+.main__tratamientos h5 {
+  text-decoration: underline; }
+
 .main__tratamientos .card {
-  margin: 3%; }
+  margin: 3%;
+  overflow: hidden; }
   .main__tratamientos .card img {
     max-height: 250px; }
   .main__tratamientos .card:hover {
-    transform: scale(1.1); }
+    transform: scale(1.1);
+    transition: all 1s ease; }
 
 h1,
 h2 {

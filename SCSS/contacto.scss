@@ -80,7 +80,14 @@ textarea {
 @media only screen and (max-width: 1000px), (min-device-width: 768px) and (max-device-width: 1024px) {
   .main__form {
     width: 100%;
-    height: 80vh;
+    height: 85vh;
+    .main__formSelector {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      font-size: 1.4rem;
+    }
+
     textarea {
       height: 60px !important;
     }
@@ -95,5 +102,13 @@ textarea {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+  }
+  .main__formButton {
+    button {
+      font-size: 1.4rem;
+      border-radius: 1rem;
+      width: 40%;
+      padding: 2%;
+    }
   }
 }
