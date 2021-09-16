@@ -129,7 +129,7 @@ p {
     content: "Beneficios"; } }
 
 .month {
-  padding: 70px 25px;
+  padding: 30px 25px;
   width: 100%;
   background: #1abc9c;
   text-align: center; }
@@ -148,7 +148,8 @@ p {
     letter-spacing: 3px; }
 
 .main__calendar {
-  margin: auto 4%; }
+  margin: auto 4%;
+  margin-bottom: 4%; }
 
 .weekdays {
   margin: 0;
