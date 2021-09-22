@@ -572,6 +572,9 @@ section {
 .post h3 {
   font-size: 3rem; }
 
+.mainPage button {
+  height: 0; }
+
 .mainPage .container img {
   width: 100%;
   margin: 2%; }

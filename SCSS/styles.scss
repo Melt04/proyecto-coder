@@ -40,10 +40,15 @@ section {
   }
 }
 .mainPage {
+  button {
+    height: 0;
+  }
   .container {
     img {
       width: 100%;
       margin: 2%;
     }
   }
+}
+.carousel-indicators {
 }
