@@ -31,13 +31,19 @@ body {
   align-items: center;
 }
 
-.footer__network {
-}
 section {
   margin: 15vh 0 10vh 0;
 }
 .post {
   h3 {
     font-size: 3rem;
+  }
+}
+.mainPage {
+  .container {
+    img {
+      width: 100%;
+      margin: 2%;
+    }
   }
 }

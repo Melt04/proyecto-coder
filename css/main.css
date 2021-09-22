@@ -571,3 +571,7 @@ section {
 
 .post h3 {
   font-size: 3rem; }
+
+.mainPage .container img {
+  width: 100%;
+  margin: 2%; }
